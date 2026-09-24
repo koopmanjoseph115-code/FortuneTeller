@@ -5,7 +5,18 @@ import java.util.Random;
 public class FortuneTellerFrame extends JFrame {
 
     private String[] fortunes = {
-            "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"
+            "The end is near. Please backup your data.",
+            "If you eat something and nobody sees you eat it, it has no calories.",
+            "Your finances will be a key to your financial future.",
+            "New romance is in the future. Ignore previous fortune.",
+            "A dubious friend may be an enemy in camouflage. Or just wearing a weird hat.",
+            "The fortune you seek is in another fortune.",
+            "Error 404: Fortune not found. Please try again later.",
+            "You will soon be hungry again.",
+            "Never test the depth of the water with both feet.",
+            "Confucius say: He who laughs last didn't get the joke.",
+            "You will read this fortune and think, \"Wow, that is so true.\"",
+            "He who cookies with one hand has dirty hand."
     };
     private int previousfortune = -1;
 
