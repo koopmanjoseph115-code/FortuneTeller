@@ -58,7 +58,10 @@ public class FortuneTellerFrame extends JFrame {
         Dimension screensize = toolkit.getScreenSize();
         int width = (int)(screensize.width * .75);
         int height = (int)(screensize.height * .75);
-
+        setTitle("FortuneTeller");
         setSize(width, height);
+
+        setLocationRelativeTo(null);
+
     }
 }
