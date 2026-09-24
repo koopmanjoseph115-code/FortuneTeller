@@ -5,9 +5,11 @@ public class FortuneTellerFrame extends JFrame {
 
     public FortuneTellerFrame(){
         JPanel toppanel = new JPanel();
-        ImageIcon fortuneimg = new ImageIcon("RES/FortuneTeller_img.png");
+        ImageIcon fortuneimg = new ImageIcon("RES/FortuneTeller_img.png", );
         JLabel titlelabel = new JLabel("FortuneTeller", fortuneimg, JLabel.CENTER);
         titlelabel.setFont(new Font("Serif", Font.BOLD, 48));
+        titlelabel.setHorizontalTextPosition(JLabel.CENTER);
+        titlelabel.setVerticalTextPosition(JLabel.BOTTOM);
         toppanel.add(titlelabel);
 
         JPanel middlepanel = new JPanel();
@@ -24,6 +26,11 @@ public class FortuneTellerFrame extends JFrame {
         bottompanel.add(fortunebutton);
         bottompanel.add(quitbutton);
 
+        setLayout(new BorderLayout(10,10));
+        add(toppanel, BorderLayout.NORTH);
+        add(middlepanel, BorderLayout.CENTER);
+        add(bottompanel, BorderLayout.SOUTH);
 
+        setSize(1000,1000);
     }
 }
